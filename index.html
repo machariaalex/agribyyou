@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agri by You — Premium Organic Farm</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-leaf">🌿</span>
+        <span class="logo-text">Agri <em>by You</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&q=80" alt="Farm landscape at golden hour" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Rooted in Nature · Raised with Purpose</p>
+      <h1 class="hero-title">
+        Pure Food.<br />
+        <em>Grown by Hand.</em>
+      </h1>
+      <p class="hero-sub">
+        We grow organic crops and rear free-range ducks the way nature intended —
+        no shortcuts, no compromises, just honest food from our farm to your table.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">Explore Our Produce</a>
+        <a href="#about" class="btn btn-ghost">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ── TRUST BAND ── -->
+  <section class="trust-band">
+    <div class="container trust-inner">
+      <div class="trust-item">
+        <div class="trust-icon">🌱</div>
+        <div>
+          <strong>100% Organic</strong>
+          <span>No synthetic inputs ever</span>
+        </div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <div class="trust-icon">🦆</div>
+        <div>
+          <strong>Free-Range Ducks</strong>
+          <span>Naturally reared, stress-free</span>
+        </div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <div class="trust-icon">🤝</div>
+        <div>
+          <strong>Trusted Reputation</strong>
+          <span>A name families rely on</span>
+        </div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <div class="trust-icon">🏡</div>
+        <div>
+          <strong>Farm to Table</strong>
+          <span>Freshness you can taste</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-images">
+        <div class="img-stack">
+          <img src="images/veges.jpeg" alt="Lush crop fields" class="img-main" />
+          <img src="images/ducks.jpg" alt="Ducks on the farm" class="img-accent" />
+          <div class="img-badge">
+            <span class="badge-num">10+</span>
+            <span class="badge-label">Years of<br/>Farming</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title">A Legacy of<br /><em>Honest Farming</em></h2>
+        <p class="body-text">
+          Agri by You was founded on one simple belief: that good food starts with
+          good practices. We tend our land with care, respect our animals, and refuse
+          to take shortcuts that compromise quality or ethics.
+        </p>
+        <p class="body-text">
+          From our leafy vegetable beds to our free-ranging duck flocks, every
+          product we offer carries the weight of our reputation — a reputation
+          built season after season through consistency, transparency, and passion.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Happy Families Served</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">12</span>
+            <span class="stat-label">Crop Varieties Grown</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">0</span>
+            <span class="stat-label">Chemicals Used</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary mt-sm">Partner With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTS ── -->
+  <section class="products section" id="products">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-label">What We Offer</p>
+        <h2 class="section-title">Nature's Finest,<br /><em>Delivered Fresh</em></h2>
+        <p class="section-desc">
+          Every item on our farm is grown or raised using purely organic methods.
+          Nothing artificial — ever.
+        </p>
+      </div>
+
+      <div class="products-grid">
+
+        <div class="product-card featured">
+          <div class="product-img-wrap">
+            <img src="images/veges.jpeg" alt="Organic vegetables" />
+            <span class="product-tag">Most Popular</span>
+          </div>
+          <div class="product-body">
+            <h3>Fresh Organic Vegetables</h3>
+            <p>Seasonal leafy greens, root vegetables, and garden produce picked at peak ripeness — bursting with flavour and nutrients.</p>
+            <div class="product-meta">
+              <span>🌿 Chemical-free</span>
+              <span>📦 Weekly harvests</span>
+            </div>
+            <a href="#contact" class="btn btn-primary sm">Order Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="images/grains.webp" alt="Fresh organic grain and cereals" />
+          </div>
+          <div class="product-body">
+            <h3>Grains & Cereals</h3>
+            <p>Sun-dried, hand-harvested grains and cereals grown in rich, uncontaminated soil for wholesome nutrition.</p>
+            <div class="product-meta">
+              <span>☀️ Sun-dried</span>
+              <span>🌾 Whole grain</span>
+            </div>
+            <a href="#contact" class="btn btn-outline sm">Enquire</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="images/ducks.jpg" alt="Free-range ducks" />
+          </div>
+          <div class="product-body">
+            <h3>Free-Range Duck</h3>
+            <p>Our ducks roam freely, fed on natural pasture. The result is rich, flavourful meat prized by top chefs and home cooks alike.</p>
+            <div class="product-meta">
+              <span>🦆 Free-range</span>
+              <span>💚 Organically reared</span>
+            </div>
+            <a href="#contact" class="btn btn-outline sm">Enquire</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="images/eggs.webp" alt="Fresh duck eggs" />
+          </div>
+          <div class="product-body">
+            <h3>Duck Eggs</h3>
+            <p>Richer and creamier than chicken eggs, our duck eggs are a chef's secret weapon — available in limited quantities each week.</p>
+            <div class="product-meta">
+              <span>🥚 Nutrient-rich</span>
+              <span>📅 Limited weekly</span>
+            </div>
+            <a href="#contact" class="btn btn-outline sm">Enquire</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="images/fruits.webp" alt="Fresh fruit harvest" />
+          </div>
+          <div class="product-body">
+            <h3>Seasonal Fruits</h3>
+            <p>Tree-ripened, hand-picked fruits harvested at the height of their season for the sweetest, most vibrant flavours possible.</p>
+            <div class="product-meta">
+              <span>🍎 Tree-ripened</span>
+              <span>🌍 Seasonal picks</span>
+            </div>
+            <a href="#contact" class="btn btn-outline sm">Enquire</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="images/veges.jpeg" alt="Organic herbs" />
+          </div>
+          <div class="product-body">
+            <h3>Organic Herbs</h3>
+            <p>Aromatic, fresh-cut herbs grown in dedicated beds — from basil and coriander to rare culinary and medicinal varieties.</p>
+            <div class="product-meta">
+              <span>🌿 Fresh-cut</span>
+              <span>🌺 Rare varieties</span>
+            </div>
+            <a href="#contact" class="btn btn-outline sm">Enquire</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROCESS ── -->
+  <section class="process section" id="process">
+    <div class="process-bg">
+      <img src="images/grains.webp" alt="Farm field rows" />
+      <div class="process-overlay"></div>
+    </div>
+    <div class="container process-inner">
+      <div class="section-header center light">
+        <p class="section-label">How We Do It</p>
+        <h2 class="section-title">From Seed to<br /><em>Your Table</em></h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h3>Prepare the Soil</h3>
+          <p>We enrich our soil naturally using compost, manure, and cover crops — creating the perfect foundation for healthy plants.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h3>Plant & Nurture</h3>
+          <p>Seeds are sown by hand and tended daily. We use companion planting and natural pest control to keep crops thriving.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h3>Harvest Fresh</h3>
+          <p>We harvest at peak ripeness — never early for shelf life. What's picked today reaches you within 24 hours.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">04</div>
+          <h3>Deliver to You</h3>
+          <p>Packed with care and delivered fresh — no cold storage, no preservatives, no compromise on quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ── -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-label">Life on the Farm</p>
+        <h2 class="section-title">A Glimpse of<br /><em>Our World</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall">
+          <img src="images/veges.jpeg" alt="Farm fields at sunrise" />
+          <div class="gallery-overlay"><span>Sunrise Fields</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/ducks.jpg" alt="Ducks in the pond" />
+          <div class="gallery-overlay"><span>Duck Ponds</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/fruits.webp" alt="Harvesting vegetables" />
+          <div class="gallery-overlay"><span>Harvest Day</span></div>
+        </div>
+        <div class="gallery-item wide">
+          <img src="images/grains.webp" alt="Lush green crops" />
+          <div class="gallery-overlay"><span>Lush Crops</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/eggs.webp" alt="Herb garden" />
+          <div class="gallery-overlay"><span>Herb Gardens</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/fruits.webp" alt="Fresh produce" />
+          <div class="gallery-overlay"><span>Fresh Produce</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-label">What People Say</p>
+        <h2 class="section-title">Our Customers<br /><em>Trust Us</em></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The duck from Agri by You is unlike anything I've tasted. You can genuinely tell it was raised with love. I won't buy from anywhere else."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#c8e6c9">M</div>
+            <div>
+              <strong>Mary K.</strong>
+              <span>Restaurant Chef, Nairobi</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured-quote">
+          <div class="stars">★★★★★</div>
+          <p>"We've been sourcing vegetables from Agri by You for three seasons now. The consistency and freshness is unmatched. Our customers notice the difference."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#fff9c4">J</div>
+            <div>
+              <strong>James O.</strong>
+              <span>Hotel Procurement Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Knowing exactly where my family's food comes from gives me peace of mind. Agri by You is transparent, honest, and genuinely organic."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#ffccbc">A</div>
+            <div>
+              <strong>Amina W.</strong>
+              <span>Loyal Customer, 4 Years</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-label">Reach Out</p>
+        <h2 class="section-title">Let's Grow<br /><em>Together</em></h2>
+        <p class="body-text">Whether you're a home cook, a restaurant, or a retailer — we'd love to supply you with the freshest organic produce. Get in touch and let's talk.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="c-icon">📍</span>
+            <div>
+              <strong>Visit the Farm</strong>
+              <span>Available on appointment</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">📞</span>
+            <div>
+              <strong>Call or WhatsApp</strong>
+              <span>+254 700 000 000</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">✉️</span>
+            <div>
+              <strong>Email Us</strong>
+              <span>hello@agribyyou.co.ke</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mjgdalbr" method="POST">
+        <input type="hidden" name="_replyto" id="replyto" />
+        <input type="text" name="_gotcha" style="display:none" />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="Full Name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="Phone / WhatsApp" placeholder="+254 ..." />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="Email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="interest">I'm interested in</label>
+          <select id="interest" name="Interested In">
+            <option value="">Select a product…</option>
+            <option>Fresh Vegetables</option>
+            <option>Grains & Cereals</option>
+            <option>Free-Range Duck</option>
+            <option>Duck Eggs</option>
+            <option>Seasonal Fruits</option>
+            <option>Organic Herbs</option>
+            <option>Wholesale / Bulk Order</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="4" placeholder="Tell us what you need…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full">Send Message</button>
+        <p class="form-note" id="formMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-leaf">🌿</span>
+        <span class="logo-text">Agri <em>by You</em></span>
+        <p>Organic farming done right — for the land, the animals, and the people we feed.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#products">Organic Vegetables</a></li>
+          <li><a href="#products">Free-Range Duck</a></li>
+          <li><a href="#products">Duck Eggs</a></li>
+          <li><a href="#products">Grains & Cereals</a></li>
+          <li><a href="#products">Seasonal Fruits</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow the Farm</h4>
+        <div class="social-links">
+          <a href="#" class="social-btn">Facebook</a>
+          <a href="#" class="social-btn">Instagram</a>
+          <a href="#" class="social-btn">WhatsApp</a>
+        </div>
+        <p class="footer-tagline">"Grown with love, delivered with pride."</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Agri by You. All rights reserved. | Proudly organic.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
