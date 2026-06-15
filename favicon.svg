@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#1a2e1a"/>
+  <!-- leaf -->
+  <path d="M32 10 C18 10 12 24 14 36 C16 46 24 52 32 54 C40 52 48 46 50 36 C52 24 46 10 32 10Z" fill="#3d6b1e"/>
+  <!-- stem -->
+  <line x1="32" y1="54" x2="32" y2="42" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- vein -->
+  <path d="M32 20 Q26 32 28 44" stroke="#c9a84c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>
