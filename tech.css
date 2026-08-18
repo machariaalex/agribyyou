@@ -8,8 +8,8 @@
   --tech-100: #eff6ff;
 }
 
-.tech-page #navbar { background: #ffffff; border-bottom: 1px solid rgba(0,0,0,.08); }
-.tech-page #navbar.scrolled { background: #ffffff; }
+.tech-page #navbar { background: #f9f4e3; border-bottom: 1px solid rgba(0,0,0,.06); }
+.tech-page #navbar.scrolled { background: #f9f4e3; }
 
 .tech-hero .hero-overlay,
 .tech-overlay {
