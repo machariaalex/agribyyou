@@ -1,0 +1,57 @@
+/* ── CRAFTS BY YOU — Brand Stylesheet ── */
+:root {
+  --crafts-900: #2d1a0e;
+  --crafts-800: #3d2010;
+  --crafts-600: #8b3a2a;
+  --crafts-400: #c0622e;
+  --crafts-200: #f4c5a0;
+  --crafts-100: #fdf4ee;
+}
+
+.crafts-page #navbar { background: rgba(45, 26, 14, 0.95); }
+.crafts-page #navbar.scrolled { background: rgba(45, 26, 14, 0.98); }
+
+.crafts-hero .hero-overlay,
+.crafts-overlay {
+  background: linear-gradient(135deg, rgba(45,26,14,.88) 0%, rgba(45,26,14,.6) 60%, rgba(45,26,14,.3) 100%) !important;
+}
+
+.crafts-page .hero-eyebrow { color: var(--crafts-200); }
+.crafts-page .hero-title em { color: var(--gold-400); }
+
+.crafts-band { background: var(--crafts-900); }
+
+.btn-crafts-primary {
+  background: var(--crafts-600);
+  color: var(--white);
+  border-color: var(--crafts-600);
+}
+.btn-crafts-primary:hover {
+  background: var(--crafts-400);
+  border-color: var(--crafts-400);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(139,58,42,.35);
+}
+
+.crafts-title em { color: var(--crafts-600); }
+
+.crafts-featured { background: var(--crafts-900); color: var(--white); }
+.crafts-featured .product-body h3 { color: var(--white); }
+.crafts-featured .product-body p  { color: rgba(255,255,255,.75); }
+.crafts-featured .product-meta span { color: rgba(255,255,255,.6); }
+
+.crafts-tag { background: var(--crafts-600) !important; color: var(--white) !important; }
+
+.crafts-process-overlay {
+  background: linear-gradient(135deg, rgba(45,26,14,.94) 0%, rgba(45,26,14,.85) 100%) !important;
+}
+.crafts-num { color: var(--crafts-200) !important; }
+
+.crafts-footer { background: var(--crafts-900); }
+
+.scroll-line.crafts-line::after { background: var(--crafts-400); }
+
+.crafts-page .nav-cta.crafts-cta {
+  background: var(--crafts-600) !important;
+  color: var(--white) !important;
+}
