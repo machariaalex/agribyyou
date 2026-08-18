@@ -182,7 +182,7 @@ ul  { list-style: none; }
   height: 48px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
+  border-radius: 6px;
   transition: opacity var(--transition);
 }
 .nav-logo-img:hover { opacity: .85; }
