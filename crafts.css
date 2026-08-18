@@ -8,8 +8,8 @@
   --crafts-100: #fdf4ee;
 }
 
-.crafts-page #navbar { background: rgba(45, 26, 14, 0.95); }
-.crafts-page #navbar.scrolled { background: rgba(45, 26, 14, 0.98); }
+.crafts-page #navbar { background: #ffffff; border-bottom: 1px solid rgba(0,0,0,.08); }
+.crafts-page #navbar.scrolled { background: #ffffff; }
 
 .crafts-hero .hero-overlay,
 .crafts-overlay {

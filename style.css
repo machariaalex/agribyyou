@@ -156,13 +156,14 @@ ul  { list-style: none; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  transition: background var(--transition), box-shadow var(--transition);
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 2px 16px rgba(0,0,0,.07);
+  transition: box-shadow var(--transition);
   padding: 0 clamp(1rem, 5vw, 3rem);
 }
 #navbar.scrolled {
-  background: rgba(26, 46, 26, 0.97);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 2px 20px rgba(0,0,0,.25);
+  box-shadow: 0 4px 24px rgba(0,0,0,.12);
 }
 
 .nav-inner {
@@ -194,7 +195,7 @@ ul  { list-style: none; }
   gap: 2.5rem;
 }
 .nav-links a {
-  color: rgba(255,255,255,.85);
+  color: var(--text-dark);
   font-size: .92rem;
   font-weight: 500;
   transition: color var(--transition);
@@ -209,7 +210,7 @@ ul  { list-style: none; }
   transform: scaleX(0);
   transition: transform var(--transition);
 }
-.nav-links a:hover { color: var(--white); }
+.nav-links a:hover { color: var(--green-700); }
 .nav-links a:hover::after { transform: scaleX(1); }
 
 .nav-cta {
@@ -235,7 +236,7 @@ ul  { list-style: none; }
   display: block;
   width: 26px;
   height: 2px;
-  background: var(--white);
+  background: var(--text-dark);
   border-radius: 2px;
   transition: var(--transition);
 }
@@ -1036,7 +1037,8 @@ ul  { list-style: none; }
 }
 
 @media (max-width: 768px) {
-  .nav-links { display: none; flex-direction: column; position: fixed; top: 76px; left: 0; right: 0; background: var(--green-900); padding: 2rem; gap: 1.5rem; }
+  .nav-links { display: none; flex-direction: column; position: fixed; top: 76px; left: 0; right: 0; background: #ffffff; border-bottom: 1px solid rgba(0,0,0,.08); box-shadow: 0 8px 24px rgba(0,0,0,.12); padding: 2rem; gap: 1.5rem; }
+  .nav-links a { color: var(--text-dark); }
   .nav-links.open { display: flex; }
   .hamburger { display: flex; }
 
