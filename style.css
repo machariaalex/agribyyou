@@ -172,7 +172,7 @@ ul  { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 76px;
+  height: 88px;
 }
 
 .logo {
@@ -180,7 +180,7 @@ ul  { list-style: none; }
   align-items: center;
 }
 .nav-logo-img {
-  height: 44px;
+  height: 64px;
   width: auto;
   object-fit: contain;
   transition: opacity var(--transition);
