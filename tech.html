@@ -13,7 +13,7 @@
   <meta property="og:title" content="Tech by You — Technology, Your Way" />
   <meta property="og:description" content="Custom websites, mobile apps and business software built exactly the way you need them." />
   <meta property="og:image" content="https://agribyyou.com/images/veges.jpeg" />
-  <meta property="og:site_name" content="Agri by You" />
+  <meta property="og:site_name" content="The By You Family" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="tech.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body class="tech-page">
 
@@ -46,25 +46,57 @@
   </nav>
 
   <!-- ── HERO ── -->
-  <header class="hero tech-hero">
-    <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1800&q=80" alt="Technology and code" class="hero-img" />
-      <div class="hero-overlay tech-overlay"></div>
+  <header class="t-hero">
+    <div class="t-hero-bg">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1800&q=80" alt="Professional at work" class="t-hero-img" />
+      <div class="t-hero-overlay"></div>
     </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Built for You · Scaled with You · Owned by You</p>
-      <h1 class="hero-title">
-        Technology<br />
-        <em>Your Way.</em>
-      </h1>
-      <p class="hero-sub">
-        We don't believe in templates or off-the-shelf solutions. Every website, app and system
-        we build is crafted from scratch — shaped entirely around your vision and goals.
-      </p>
-      <div class="hero-actions">
-        <a href="#services" class="btn btn-tech-primary">Our Services</a>
-        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+    <div class="container t-hero-inner">
+
+      <div class="t-hero-text" data-reveal>
+        <p class="t-eyebrow">TechByYou &nbsp;·&nbsp; Part of the By You Family</p>
+        <h1 class="t-hero-title">
+          Built for the<br />
+          <em>way you work</em>
+        </h1>
+        <p class="t-hero-sub">
+          Custom websites, apps and business software shaped entirely around your vision —
+          no templates, no one-size-fits-all, just technology built your way.
+        </p>
+        <div class="t-hero-actions">
+          <a href="#contact" class="t-btn-primary">Get started &nbsp;→</a>
+          <a href="#services" class="t-btn-ghost">See our services</a>
+        </div>
       </div>
+
+      <div class="t-hero-widgets" data-reveal>
+        <div class="t-widget">
+          <div class="t-widget-header">
+            <div class="t-widget-dots">
+              <span class="t-dot green"></span>
+              <span class="t-dot amber"></span>
+              <span class="t-dot red"></span>
+            </div>
+            <span class="t-widget-title">Projects Delivered</span>
+            <span class="t-widget-badge">Active</span>
+          </div>
+          <div class="t-widget-metric">24+</div>
+          <div class="t-widget-bars">
+            <div class="t-bar" style="--h:45%"></div>
+            <div class="t-bar" style="--h:62%"></div>
+            <div class="t-bar" style="--h:78%"></div>
+            <div class="t-bar t-bar-hi" style="--h:95%"></div>
+            <div class="t-bar" style="--h:68%"></div>
+            <div class="t-bar" style="--h:85%"></div>
+          </div>
+          <p class="t-widget-sub">↑ 3 new projects this month</p>
+        </div>
+        <div class="t-widget t-widget-sm">
+          <span class="t-widget-pill">💡 AI Integration</span>
+          <p class="t-widget-sm-text">Now available across all our solutions</p>
+        </div>
+      </div>
+
     </div>
     <div class="hero-scroll-hint">
       <span>Scroll</span>
@@ -72,141 +104,98 @@
     </div>
   </header>
 
-  <!-- ── TRUST BAND ── -->
-  <section class="trust-band tech-band">
-    <div class="container trust-inner">
-      <div class="trust-item">
-        <div class="trust-icon">⚡</div>
-        <div>
-          <strong>100% Custom</strong>
-          <span>No templates, ever</span>
-        </div>
+  <!-- ── TICKER ── -->
+  <div class="t-ticker">
+    <div class="container t-ticker-inner">
+      <span class="t-ticker-label">What we build</span>
+      <div class="t-ticker-items">
+        <span>Web Apps</span><span class="t-sep">·</span>
+        <span>Mobile Apps</span><span class="t-sep">·</span>
+        <span>Business Software</span><span class="t-sep">·</span>
+        <span>Dashboards &amp; Analytics</span><span class="t-sep">·</span>
+        <span>Automation &amp; AI</span><span class="t-sep">·</span>
+        <span>IT Consultation</span>
       </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <div class="trust-icon">📱</div>
-        <div>
-          <strong>Web & Mobile</strong>
-          <span>All platforms covered</span>
+    </div>
+  </div>
+
+  <!-- ── BENTO SERVICES ── -->
+  <section class="t-bento-section section" id="services">
+    <div class="container">
+      <div class="t-bento-layout">
+
+        <div class="t-bento-intro" data-reveal>
+          <p class="section-label">What We Build</p>
+          <h2 class="t-section-title">Build for your<br />next generation<br />of business</h2>
+          <p class="t-bento-desc">
+            We don't believe in off-the-shelf. Every solution is designed from scratch —
+            shaped around how you work, not how a template expects you to.
+          </p>
+          <a href="#contact" class="t-btn-outline">Start a conversation &nbsp;→</a>
         </div>
-      </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <div class="trust-icon">🔒</div>
-        <div>
-          <strong>Secure & Scalable</strong>
-          <span>Built to grow with you</span>
+
+        <div class="t-bento-grid" data-reveal>
+          <div class="t-bc t-bc-dark">
+            <span class="t-bc-icon">🌐</span>
+            <h3>Custom Websites<br />&amp; Web Apps</h3>
+            <p>Beautiful, fast and fully unique — built from scratch, never from a template.</p>
+            <a href="#contact" class="t-bc-link">Get a quote →</a>
+          </div>
+          <div class="t-bc t-bc-blue">
+            <span class="t-bc-icon">📱</span>
+            <h3>Mobile Apps</h3>
+            <p>iOS &amp; Android — designed around your users and your workflow.</p>
+          </div>
+          <div class="t-bc t-bc-muted">
+            <span class="t-bc-icon">⚙️</span>
+            <h3>Business Software</h3>
+            <p>Custom CRM, ERP, inventory — built to fit how you actually operate.</p>
+          </div>
+          <div class="t-bc t-bc-green">
+            <span class="t-bc-icon">🤖</span>
+            <h3>Automation &amp; AI</h3>
+            <p>Automate the repetitive. Amplify what matters most.</p>
+          </div>
         </div>
-      </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <div class="trust-icon">🛠️</div>
-        <div>
-          <strong>Ongoing Support</strong>
-          <span>We stay with you</span>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ── SERVICES ── -->
-  <section class="products section" id="services">
+  <!-- ── HIGHLIGHTS ── -->
+  <section class="t-highlights section">
     <div class="container">
-      <div class="section-header center">
-        <p class="section-label">What We Build</p>
-        <h2 class="section-title tech-title">Tech Solutions,<br /><em>Built Your Way</em></h2>
-        <p class="section-desc">Every solution is designed around your specific business needs — not the other way around.</p>
+      <div class="t-hl-header" data-reveal>
+        <h2 class="t-section-title">Everything you need<br />to run your business, fast</h2>
+        <a href="#contact" class="t-btn-outline">Learn more &nbsp;→</a>
       </div>
-      <div class="products-grid">
+      <div class="t-hl-grid" data-reveal>
 
-        <div class="product-card tech-featured">
-          <div class="product-img-wrap">
-            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=700&q=80" alt="Custom website design" />
-            <span class="product-tag tech-tag">Most Requested</span>
-          </div>
-          <div class="product-body">
-            <h3>Custom Websites & Web Apps</h3>
-            <p>Beautiful, fast and fully custom websites built from scratch. Whether it's a business landing page, e-commerce store or complex web application — we build it your way.</p>
-            <div class="product-meta">
-              <span>⚡ Fast & responsive</span>
-              <span>🎨 Unique design</span>
-            </div>
-            <a href="#contact" class="btn btn-tech-primary sm">Get a Quote</a>
+        <div class="t-hl-card t-hl-dark">
+          <h3>Built exactly<br />your way</h3>
+          <p>No templates. No compromises. Every feature, every flow, every pixel — shaped entirely around your vision.</p>
+          <div class="t-hl-tags">
+            <span>Custom design</span>
+            <span>Scalable code</span>
+            <span>Your branding</span>
           </div>
         </div>
 
-        <div class="product-card">
-          <div class="product-img-wrap">
-            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&q=80" alt="Mobile app development" />
+        <div class="t-hl-card t-hl-light">
+          <p class="t-hl-eyebrow">Performance</p>
+          <h3>Intuitive.<br />Fast.<br />Reliable.</h3>
+          <div class="t-hl-score">
+            <span class="t-hl-num">98</span>
+            <span class="t-hl-unit">/ 100</span>
           </div>
-          <div class="product-body">
-            <h3>Mobile App Development</h3>
-            <p>iOS and Android apps built around your workflow. From customer-facing apps to internal tools — we turn your idea into a product people love using.</p>
-            <div class="product-meta">
-              <span>📱 iOS & Android</span>
-              <span>🚀 Launch-ready</span>
-            </div>
-            <a href="#contact" class="btn btn-outline sm">Enquire</a>
-          </div>
+          <p class="t-hl-sub">Average Lighthouse score across our delivered sites</p>
         </div>
 
-        <div class="product-card">
-          <div class="product-img-wrap">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80" alt="Business software and systems" />
-          </div>
-          <div class="product-body">
-            <h3>Business Software & Systems</h3>
-            <p>Custom ERP, CRM, inventory and management systems that fit how you actually work — not generic software you have to bend your business around.</p>
-            <div class="product-meta">
-              <span>⚙️ Fully custom</span>
-              <span>📊 Data-driven</span>
-            </div>
-            <a href="#contact" class="btn btn-outline sm">Enquire</a>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-img-wrap">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80" alt="Dashboards and analytics" />
-          </div>
-          <div class="product-body">
-            <h3>Dashboards & Analytics</h3>
-            <p>Custom data dashboards that surface the numbers that actually matter to your business — real-time insights, beautiful visualizations, your data your way.</p>
-            <div class="product-meta">
-              <span>📈 Real-time data</span>
-              <span>🎯 Business insights</span>
-            </div>
-            <a href="#contact" class="btn btn-outline sm">Enquire</a>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-img-wrap">
-            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=700&q=80" alt="Automation and AI" />
-          </div>
-          <div class="product-body">
-            <h3>Automation & AI Integration</h3>
-            <p>Automate repetitive tasks, integrate AI into your workflow and free your team to focus on what matters — we make your business work smarter, not harder.</p>
-            <div class="product-meta">
-              <span>🤖 AI-powered</span>
-              <span>⏱️ Save time</span>
-            </div>
-            <a href="#contact" class="btn btn-outline sm">Enquire</a>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-img-wrap">
-            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=80" alt="IT consultation and support" />
-          </div>
-          <div class="product-body">
-            <h3>IT Consultation & Support</h3>
-            <p>Strategic tech advice from people who understand business. We help you make the right technology decisions — and stay by your side after launch.</p>
-            <div class="product-meta">
-              <span>🛠️ Ongoing support</span>
-              <span>💡 Strategic advice</span>
-            </div>
-            <a href="#contact" class="btn btn-outline sm">Enquire</a>
+        <div class="t-hl-card t-hl-photo">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80" alt="Team collaborating" />
+          <div class="t-hl-photo-overlay">
+            <h3>Launch in weeks,<br />not months</h3>
+            <p>Fast delivery without cutting a single corner</p>
           </div>
         </div>
 
@@ -241,13 +230,13 @@
         <div class="step">
           <div class="step-number tech-num">03</div>
           <h3>Build</h3>
-          <p>Our developers build your solution with clean, scalable code — keeping you updated at every milestone.</p>
+          <p>Clean, scalable code built to your spec — with regular updates at every milestone.</p>
         </div>
         <div class="step-arrow">→</div>
         <div class="step">
           <div class="step-number tech-num">04</div>
-          <h3>Launch & Support</h3>
-          <p>We deploy, test, and hand over your product — then stay on to support, maintain and grow it with you.</p>
+          <h3>Launch &amp; Support</h3>
+          <p>We deploy, test, hand over — then stay on to support, maintain and grow it with you.</p>
         </div>
       </div>
     </div>
@@ -259,7 +248,7 @@
       <div class="contact-info">
         <p class="section-label">Start a Project</p>
         <h2 class="section-title">Let's Build<br /><em>Something Great</em></h2>
-        <p class="body-text">Have an idea? A problem to solve? A system to build? Tell us what you need and we'll tell you how we'd build it — no obligation, no pressure.</p>
+        <p class="body-text">Have an idea? A problem to solve? A system to build? Tell us what you need — no obligation, no pressure.</p>
         <div class="contact-details">
           <div class="contact-item">
             <span class="c-icon">✉️</span>
@@ -279,7 +268,10 @@
             <span class="c-icon">🌐</span>
             <div>
               <strong>Part of the By You Family</strong>
-              <span><a href="index.html" style="color:var(--gold-500)">AgriByYou</a> · <a href="crafts.html" style="color:var(--gold-500)">CraftsByYou</a></span>
+              <span>
+                <a href="index.html" style="color:var(--gold-500)">AgriByYou</a> ·
+                <a href="crafts.html" style="color:var(--gold-500)">CraftsByYou</a>
+              </span>
             </div>
           </div>
         </div>
@@ -309,8 +301,8 @@
             <option>Custom Website</option>
             <option>Mobile App</option>
             <option>Business Software / System</option>
-            <option>Dashboard & Analytics</option>
-            <option>Automation & AI</option>
+            <option>Dashboard &amp; Analytics</option>
+            <option>Automation &amp; AI</option>
             <option>IT Consultation</option>
             <option>Something Else</option>
           </select>
@@ -329,18 +321,17 @@
   <footer class="footer tech-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-leaf">💻</span>
-        <span class="logo-text">Tech <em>by You</em></span>
+        <img src="images/techlogo.jpeg" alt="TechByYou" style="height:48px;border-radius:6px;margin-bottom:.8rem;" />
         <p>Custom technology solutions built around your vision — no templates, no compromises.</p>
       </div>
       <div class="footer-links">
         <h4>Services</h4>
         <ul>
-          <li><a href="#services">Websites & Web Apps</a></li>
+          <li><a href="#services">Websites &amp; Web Apps</a></li>
           <li><a href="#services">Mobile Apps</a></li>
           <li><a href="#services">Business Software</a></li>
           <li><a href="#services">Dashboards</a></li>
-          <li><a href="#services">Automation & AI</a></li>
+          <li><a href="#services">Automation &amp; AI</a></li>
         </ul>
       </div>
       <div class="footer-links">
