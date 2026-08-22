@@ -67,7 +67,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="home-page">
 
   <!-- ── NAVIGATION ── -->
   <nav id="navbar">
@@ -89,31 +89,62 @@
   </nav>
 
   <!-- ── HERO ── -->
-  <header class="hero">
-    <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&q=80" alt="Farm landscape at golden hour" class="hero-img" />
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">By You. For You.</p>
-      <h1 class="hero-title">
-        Pure Food.<br />
-        <em>Grown by Hand.</em>
-      </h1>
-      <p class="hero-sub">
-        We grow organic crops and rear free-range ducks the way nature intended —
-        no shortcuts, no compromises, just honest food from our farm to your table.
-      </p>
-      <div class="hero-actions">
-        <a href="products.html" class="btn btn-primary">Explore Our Produce</a>
-        <a href="about.html" class="btn btn-ghost">Our Story</a>
+  <div class="hc-wrap">
+    <div class="hc-card">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&q=80"
+           alt="Farm landscape at golden hour" class="hc-img" />
+      <div class="hc-overlay"></div>
+
+      <!-- Centre content -->
+      <div class="hc-body">
+        <p class="hc-eyebrow">By You. For You.</p>
+        <h1 class="hc-title">
+          Pure Food.<br />
+          <em>Grown by Hand.</em>
+        </h1>
+        <p class="hc-sub">
+          We grow organic crops and rear free-range ducks the way nature intended —
+          no shortcuts, no compromises, just honest food from our farm to your table.
+        </p>
+        <a href="products.html" class="hc-cta">
+          Explore Our Produce
+          <span class="hc-cta-icon">→</span>
+        </a>
+      </div>
+
+      <!-- Bottom overlay cards -->
+      <div class="hc-bottom">
+        <div class="hc-feature">
+          <div class="hc-feature-img">
+            <img src="images/ducks.jpg" alt="Free-range ducks" />
+          </div>
+          <div class="hc-feature-body">
+            <h4>Weekly Fresh Harvest</h4>
+            <p>Organic produce picked at peak ripeness, delivered within 24 hours.</p>
+            <a href="products.html" class="hc-feature-link">View Products →</a>
+          </div>
+        </div>
+        <div class="hc-quote">
+          <p>"The produce from Agri by You is unlike anything I've tasted. You can genuinely tell it was grown with love and care."</p>
+          <div class="hc-quote-author">
+            <div class="hc-avatar">M</div>
+            <div>
+              <strong>Mary K.</strong>
+              <span>Restaurant Chef, Nairobi</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </header>
+  </div>
+
+  <!-- ── HOME TAGLINE ── -->
+  <div class="home-tagline container">
+    <span class="home-tagline-badge">By You. For You.</span>
+    <p class="home-tagline-text">
+      Started as a belief in <strong>honest farming</strong>, now trusted by hundreds of Kenyan families.
+    </p>
+  </div>
 
 
   <!-- ── THE BY YOU FAMILY ── -->
