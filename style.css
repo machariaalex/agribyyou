@@ -1116,7 +1116,7 @@ ul  { list-style: none; }
 
 /* Outer wrapper: adds the card margin from viewport edges */
 .hc-wrap {
-  padding: 6rem 1.5rem 0;
+  padding: 88px 1.5rem 0; /* 88px = navbar height */
   max-width: 1340px;
   margin: 0 auto;
 }
@@ -1126,7 +1126,8 @@ ul  { list-style: none; }
   position: relative;
   border-radius: 28px;
   overflow: hidden;
-  min-height: 86vh;
+  height: calc(100vh - 88px);
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1385,8 +1386,8 @@ ul  { list-style: none; }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .hc-wrap { padding: 5rem .75rem 0; }
-  .hc-card  { min-height: 75vh; border-radius: 20px; }
+  .hc-wrap { padding: 76px .75rem 0; }
+  .hc-card  { height: calc(100vh - 76px); border-radius: 20px; }
   .hc-body  { padding: 4rem 1.2rem 18rem; }
   .hc-bottom {
     grid-template-columns: 1fr;
