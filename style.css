@@ -1114,17 +1114,15 @@ ul  { list-style: none; }
   background: #f4f0e6;
 }
 
-/* Outer wrapper: adds the card margin from viewport edges */
+/* Outer wrapper: full width, sits flush below navbar */
 .hc-wrap {
-  padding: 88px 1.5rem 0; /* 88px = navbar height */
-  max-width: 1340px;
-  margin: 0 auto;
+  padding-top: 88px; /* navbar height */
 }
 
-/* The rounded card */
+/* The rounded card — edge to edge, full remaining viewport */
 .hc-card {
   position: relative;
-  border-radius: 28px;
+  border-radius: 0;
   overflow: hidden;
   height: calc(100vh - 88px);
   min-height: 600px;
@@ -1386,8 +1384,8 @@ ul  { list-style: none; }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .hc-wrap { padding: 76px .75rem 0; }
-  .hc-card  { height: calc(100vh - 76px); border-radius: 20px; }
+  .hc-wrap { padding-top: 76px; }
+  .hc-card  { height: calc(100vh - 76px); border-radius: 0; }
   .hc-body  { padding: 4rem 1.2rem 18rem; }
   .hc-bottom {
     grid-template-columns: 1fr;
