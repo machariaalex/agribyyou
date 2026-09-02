@@ -17,7 +17,7 @@ hamburger.addEventListener('click', () => {
 });
 
 /* close menu on nav link click */
-navLinks.querySelectorAll('a').forEach(link => {
+navLinks?.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
     hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = '1'; });
@@ -50,7 +50,7 @@ document.getElementById('email')?.addEventListener('input', e => {
 const form    = document.getElementById('contactForm');
 const formMsg = document.getElementById('formMsg');
 
-form.addEventListener('submit', async e => {
+form?.addEventListener('submit', async e => {
   e.preventDefault();
   const btn = form.querySelector('button[type="submit"]');
   btn.textContent = 'Sending…';
