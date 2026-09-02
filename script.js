@@ -107,13 +107,44 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(s => sectionObserver.observe(s));
 
-/* ── PARALLAX on hero bg ── */
-const heroImg = document.querySelector('.hero-img');
-window.addEventListener('scroll', () => {
-  if (heroImg) {
-    heroImg.style.transform = `scale(1.06) translateY(${window.scrollY * 0.18}px)`;
+/* ── HERO SLIDER ── */
+(function () {
+  const slider = document.getElementById('heroSlider');
+  if (!slider) return;
+
+  const slides = slider.querySelectorAll('.slide');
+  const dots   = slider.querySelectorAll('.dot');
+  let current = 0;
+  let timer;
+
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    resetTimer();
   }
-}, { passive: true });
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 5500);
+  }
+
+  slider.querySelector('.slider-prev').addEventListener('click', () => goTo(current - 1));
+  slider.querySelector('.slider-next').addEventListener('click', () => goTo(current + 1));
+  dots.forEach(dot => dot.addEventListener('click', () => goTo(+dot.dataset.dot)));
+
+  /* Touch/swipe support */
+  let touchStartX = 0;
+  slider.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  slider.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 50) goTo(dx < 0 ? current + 1 : current - 1);
+  });
+
+  resetTimer();
+})();
 
 /* ── COUNT-UP ANIMATION for stats ── */
 function animateCount(el, target) {

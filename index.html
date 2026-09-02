@@ -88,55 +88,83 @@
     </div>
   </nav>
 
-  <!-- ── HERO ── -->
-  <div class="hc-wrap">
-    <div class="hc-card">
-      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&q=80"
-           alt="Farm landscape at golden hour" class="hc-img" />
-      <div class="hc-overlay"></div>
+  <!-- ── HERO SLIDER ── -->
+  <section class="hero-slider" id="heroSlider">
 
-      <!-- Centre content -->
-      <div class="hc-body">
-        <p class="hc-eyebrow">By You. For You.</p>
-        <h1 class="hc-title">
-          Pure Food.<br />
-          <em>Grown by Hand.</em>
-        </h1>
-        <p class="hc-sub">
-          We grow organic crops and rear free-range ducks the way nature intended —
-          no shortcuts, no compromises, just honest food from our farm to your table.
-        </p>
-        <a href="products.html" class="hc-cta">
-          Explore Our Produce
-          <span class="hc-cta-icon">→</span>
-        </a>
+    <!-- Slide 1 -->
+    <div class="slide active" data-slide="0">
+      <div class="slide-bg">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&q=80" alt="Farm at golden hour" />
       </div>
-
-      <!-- Bottom overlay cards -->
-      <div class="hc-bottom">
-        <div class="hc-feature">
-          <div class="hc-feature-img">
-            <img src="images/ducks.jpg" alt="Free-range ducks" />
-          </div>
-          <div class="hc-feature-body">
-            <h4>Weekly Fresh Harvest</h4>
-            <p>Organic produce picked at peak ripeness, delivered within 24 hours.</p>
-            <a href="products.html" class="hc-feature-link">View Products →</a>
-          </div>
-        </div>
-        <div class="hc-quote">
-          <p>"The produce from Agri by You is unlike anything I've tasted. You can genuinely tell it was grown with love and care."</p>
-          <div class="hc-quote-author">
-            <div class="hc-avatar">M</div>
-            <div>
-              <strong>Mary K.</strong>
-              <span>Restaurant Chef, Nairobi</span>
-            </div>
-          </div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content container">
+        <span class="slide-tag">100% Organic · Kenya</span>
+        <h1 class="slide-title">Pure Food.<br /><em>Grown by Hand.</em></h1>
+        <p class="slide-sub">We grow organic crops and rear free-range ducks the way nature intended — no shortcuts, no compromises.</p>
+        <div class="slide-actions">
+          <a href="products.html" class="sh-btn-primary">Explore Products</a>
+          <a href="about.html" class="sh-btn-ghost">Our Story →</a>
         </div>
       </div>
     </div>
-  </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" data-slide="1">
+      <div class="slide-bg">
+        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1800&q=80" alt="Organic vegetable garden" />
+      </div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content container">
+        <span class="slide-tag">Farm Fresh · Weekly Harvest</span>
+        <h1 class="slide-title">Fresh From<br /><em>the Farm.</em></h1>
+        <p class="slide-sub">Seasonal vegetables, grains, and fruits picked at peak ripeness — delivered to your table within 24 hours.</p>
+        <div class="slide-actions">
+          <a href="products.html" class="sh-btn-primary">Our Produce</a>
+          <a href="contact.html" class="sh-btn-ghost">Order Now →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" data-slide="2">
+      <div class="slide-bg">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1800&q=80" alt="Lush crop fields" />
+      </div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content container">
+        <span class="slide-tag">Free-Range · Chemical-Free</span>
+        <h1 class="slide-title">Nature's Way.<br /><em>Always.</em></h1>
+        <p class="slide-sub">No chemicals, no shortcuts. Every crop and every duck raised exactly the way nature — and you — intended.</p>
+        <div class="slide-actions">
+          <a href="about.html" class="sh-btn-primary">Learn More</a>
+          <a href="contact.html" class="sh-btn-ghost">Get in Touch →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow controls -->
+    <button class="slider-arrow slider-prev" aria-label="Previous slide">&#8592;</button>
+    <button class="slider-arrow slider-next" aria-label="Next slide">&#8594;</button>
+
+    <!-- Dot indicators -->
+    <div class="slider-dots">
+      <button class="dot active" data-dot="0" aria-label="Slide 1"></button>
+      <button class="dot" data-dot="1" aria-label="Slide 2"></button>
+      <button class="dot" data-dot="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Stats strip -->
+    <div class="slider-stats">
+      <div class="slider-stat"><strong>100%</strong><span>Organic</span></div>
+      <div class="slider-stat-div"></div>
+      <div class="slider-stat"><strong>24hr</strong><span>Delivery</span></div>
+      <div class="slider-stat-div"></div>
+      <div class="slider-stat"><strong>500+</strong><span>Happy Customers</span></div>
+      <div class="slider-stat-div"></div>
+      <div class="slider-stat"><strong>0</strong><span>Chemicals Used</span></div>
+    </div>
+
+  </section>
 
 
 
